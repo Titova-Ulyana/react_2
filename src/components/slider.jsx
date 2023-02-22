@@ -1,9 +1,16 @@
 import React from 'react';
+import Test from "../components/test"
+
+import dog from '../img/pets/собака.jpg';
+import mouse from '../img/pets/мышь.jpg';
+import gorill from '../img/pets/горилла.jpg';
+
+let pets1={photos:dog, naiden:'Найдена собака', description:'Собака рыжая, была утеряна в красногвардейчком райне районе', css:'carousel-item active text-center'}
+let pets2={photos:mouse, naiden:'Найдена мышь', description:'Мышь серая, была утеряна в центральном районе', css:'carousel-item text-center'}
+let pets3={photos:gorill, naiden:'Найдена горила', description:'Горилла, была утеряна в красногвардейчком райне районе', css:'carousel-item text-center'}
 
 
-
-
-const Slider = (props) => {
+const Slider = () => {
     return (
 <div>
     
@@ -15,21 +22,10 @@ const Slider = (props) => {
       </div>
       <div className="carousel-inner">
 
-        <div className="carousel-item active text-center">
-          <div style={{'textAlign':'center', 'min-height':'300px'}}><img src={props.pets.photos} alt="Собака" style={{'textAlign':'center', 'width':'300px', 'height':'auto'}}/></div>
-          <h2>{props.pets.naiden}</h2>
-          <p style={{'margin-bottom':'50px'}}>{props.pets.description}</p>
-        </div>
-        <div className="carousel-item text-center">
-          <div style={{'textAlign':'center', 'min-height':'300px'}}><img src={props.pets.photos} alt="Мышь" style={{'textAlign':'center', 'width':'300px', 'height':'auto'}}/></div>
-         <h2 className="text-center">Найдена мышь</h2>
-          <p style={{'margin-bottom':'50px'}}>Мышь серая, была утеряна в центральном районе</p>
-        </div>
-        <div className="carousel-item text-center">
-          <div style={{'textAlign':'center', 'min-height':'300px'}}><img src={props.pets.photos} alt="Горилла" style={{'textAlign':'center', 'width':'300px', 'height':'auto'}}/></div>
-          <h2 className="text-center">Найдена горила</h2>
-          <p style={{'margin-bottom':'50px'}}>Горилла, была утеряна в красногвардейчком райне районе</p>
-      </div>
+
+<Test pets={pets1}/>
+<Test pets={pets2}/>
+<Test pets={pets3}/>
 
     </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
