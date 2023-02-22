@@ -29,8 +29,10 @@ return (
       <Cards card={card1}/>
       <Slider/>
       <Cards card={card2}/>
+      <div className="d-flex flex-row">
       <Animal pet={pet1}/>
       <Animal pet={pet2}/>
+      </div>
       <Cards card={card3}/>
       <Podpiska/>
       </main>
