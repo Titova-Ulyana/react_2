@@ -1,6 +1,4 @@
 import React from "react";
-import cat from '../img/pets/кошка.jpg';
-import goat from '../img/pets/коза.jpeg';
 import { Link } from "react-router-dom";
 
 
