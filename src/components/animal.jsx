@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-const Naiden = (props) => {
+const Animal = (props) => {
     return (
 <div>
     <div className="d-flex flex-row flex-wrap">
@@ -25,10 +25,10 @@ const Naiden = (props) => {
 
             <p className="w-50 text-primary" style={{'minWidth':'300px;'}}>Дата:</p>
             <p className="w-50" style={{'minWidth':'300px;'}}>{props.pet.date}</p>
-            <Link to={'/pets'}><button type="submit" className="btn btn-primary">Подробнее</button></Link>
+            <Link to={'/pets/id'}><button type="submit" className="btn btn-primary">Подробнее</button></Link>
         </div>
     </div>
 </div>
     )
 }
-export default Naiden;
+export default Animal;

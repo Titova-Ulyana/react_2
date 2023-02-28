@@ -5,7 +5,7 @@ import dog from '../img/pets/собака.jpg';
 import mouse from '../img/pets/мышь.jpg';
 import gorill from '../img/pets/горилла.jpg';
 
-let pets1={photos:dog, naiden:'Найдена собака', description:'Собака рыжая, была утеряна в красногвардейчком райне районе', css:'carousel-item active text-center'}
+let pets1={photos:dog, kind:'Найдена собака', description:'Собака рыжая, была утеряна в красногвардейчком райне районе', css:'carousel-item active text-center'}
 let pets2={photos:mouse, naiden:'Найдена мышь', description:'Мышь серая, была утеряна в центральном районе', css:'carousel-item text-center'}
 let pets3={photos:gorill, naiden:'Найдена горила', description:'Горилла, была утеряна в красногвардейчком райне районе', css:'carousel-item text-center'}
 

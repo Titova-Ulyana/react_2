@@ -22,7 +22,7 @@ function App() {
       <Route path={'/auth'} element={<Auth/>}/>
       <Route path={'/edit_pet'} element={<Edits/>}/>
       <Route path={'/order'} element={<Order/>}/>
-      <Route path={'/pets'} element={<Pet/>}/>
+      <Route path={'/pets/:id'} element={<Pet/>}/>
       <Route path={'/profile'} element={<Profile/>}/>
       <Route path={'/registration'} element={<Regist/>}/>
       <Route path={'/search'} element={<Search/>}/>
