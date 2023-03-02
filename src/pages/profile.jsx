@@ -5,7 +5,9 @@ import Dobav from '../components/dobav';
 //import Pagination from '../components/pagination';
 import Header from '../components/header';
 import Cards from "../components/carts";
-import Mod from "../components/modal"
+import Modal1 from "../components/moda_phonel"
+import Modal from "../components/modal_email"
+
 import { Link } from "react-router-dom";
 //import { useParams } from 'react-router-dom';
 
@@ -17,6 +19,7 @@ import { Link } from "react-router-dom";
 function Profile() {
   let card1={name:'Личный кабинет'}
   let card2={name:'Добавленные объявления'}
+  let card3={name:'Изменить данные'}
 
   let [profil, setProfil]=useState({id:'', phone:'', email:'', name:'', registrationDate:'', countPets:'', countOrder:''})
   useEffect(()=>getprof(), [])
@@ -91,10 +94,10 @@ function Profile() {
       <main style={{'minHeight':'85vh'}}>
       <Header/>
       <Cards card={card1}/>
-      <div className="p-3">
       <Prof prof={profil}/>
-      <Mod/>
-      </div>
+      <Cards card={card3}/>
+      <Modal/>
+      <Modal1/>
       <Cards card={card2}/>
 
       <div>

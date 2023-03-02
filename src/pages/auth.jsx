@@ -70,14 +70,14 @@ function Auth() {
                         <form className="w-50 g-3 m-auto border p-3 needs-validation" style={{ minWidth: "300px" }} onSubmit={auth} noValidate id='form'>
 
                             <div className="m-3">
-                                <label htmlFor="validationCustom01" className="form-label">e-mail</label>
+                                <label for="validationCustom01" className="form-label">e-mail</label>
                                 <input type="email" className="form-control" id="validationCustom01" required onChange={(e) => setUser({ ...user, email: e.target.value })} />
                                 <div className="invalid-feedback">
                                     Пожалуйста, введите адрес электронной почты
                                 </div>
                             </div>
                             <div className="m-3">
-                                <label htmlFor="validationCustom02" className="form-label">Пароль</label>
+                                <label for="validationCustom02" className="form-label">Пароль</label>
                                 <input type="password" className="form-control" id="validationCustom02" required onChange={(e) => setUser({ ...user, password: e.target.value })} />
                                 <div className="invalid-feedback">
                                     Пожалуйста, введите пароль

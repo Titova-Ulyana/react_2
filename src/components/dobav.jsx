@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Dobavlenie = (props) => {
 
-//let history=useNavigate();
+
     function deletepet(id){
 
         var myHeaders = new Headers();
@@ -20,7 +20,6 @@ const Dobavlenie = (props) => {
           .then(result => {
             console.log(result)
             window.location.reload()
-            //history('/profile')
           })
           .catch(error => console.log('error', error));
         }
