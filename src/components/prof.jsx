@@ -1,10 +1,10 @@
 import React from "react";
-import Mod from "../components/modal"
+
 
 const Prof = (props) => {
     return (
 <div>
-    <div className="p-3">
+    
             <div className="d-flex flex-row flex-wrap border m-auto p-3 w-50" style={{'minWidth':'300px'}} >
 
                 <p className="w-50 text-primary" style={{'minWidth':'250px'}}>id:</p>
@@ -29,9 +29,6 @@ const Prof = (props) => {
                 <p className="w-50" style={{'minWidth':'300px'}}>{props.prof.countOrder}</p>
             </div>
 
-
-<Mod/>
-    </div>
 </div>
 
     );
